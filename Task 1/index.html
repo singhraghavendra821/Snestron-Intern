@@ -1,0 +1,282 @@
+<!DOCTYPE html><html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="theme-color" content="#0ea5e9"/>
+  <title>Portfolio – Full‑Stack Developer</title>
+  <meta name="description" content="Internship‑ready, responsive portfolio for a Full‑Stack Developer: projects, skills, experience, and contact."/>
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <!-- Header -->
+  <header class="sticky">
+    <div class="container" style="display:flex;align-items:center;gap:12px;justify-content:space-between;padding:12px 0;">
+      <a href="#home" class="chip" aria-label="Home"><strong>Raghavendra Singh</strong><span class="tag">· Full‑Stack Dev</span></a>
+      <nav aria-label="Primary">
+        <a href="#about">About</a>
+        <a href="#skills">Skills</a>
+        <a href="#projects">Projects</a>
+        <a href="#experience">Experience</a>
+        <a href="#contact">Contact</a>
+      </nav>
+      <div style="display:flex;gap:10px;align-items:center">
+        <a class="btn outline" href="assets/Raghavendra_Singh_CV_Single_Page.pdf" download>Download Résumé</a>
+      </div>
+    </div>
+  </header>  <!-- Hero -->  <section class="section" id="home">
+    <div class="container hero">
+      <div>
+        <p class="chip" aria-label="location">📍 India · Open to Internships</p>
+        <h1 class="title">Full‑Stack Developer</h1>
+        <p class="subtitle">I build fast, accessible web apps using <strong>React</strong>, <strong>Node.js</strong>, <strong>Express</strong>, and <strong>MongoDB</strong>—with clean UI and solid APIs.</p>
+        <div class="hero-actions">
+          <a class="btn" href="#projects">View Projects</a>
+          <a class="btn outline" href="https://github.com/" target="_blank" rel="noreferrer">GitHub</a>
+          <a class="btn outline" href="mailto:hello@example.com">Email</a>
+        </div>
+      </div>
+      <div style="justify-self:center">
+        <div class="avatar"><img src="assets/profile.jpg" alt="Portrait avatar"/></div>
+      </div>
+    </div>
+  </section>  <!-- About -->  <section class="section" id="about">
+    <div class="container grid" style="grid-template-columns:1.2fr .8fr;align-items:start">
+      <article class="card" style="padding:18px 18px">
+        <h2 class="title" style="font-size:1.6rem">About</h2>
+        <p class="muted">I enjoy translating product ideas into polished user experiences and reliable backend services. I focus on performance, accessibility, and clean code.</p>
+        <ul class="grid" style="grid-template-columns:repeat(4,1fr);margin-top:12px">
+          <li class="chip">⚡ Performance‑first</li>
+          <li class="chip">♿ Accessible UI</li>
+          <li class="chip">🧪 Tested APIs</li>
+          <li class="chip">📦 Reusable comps</li>
+        </ul>
+      </article>
+      <aside class="card" style="padding:18px 18px">
+        <h3 style="margin:0 0 6px">Quick Info</h3>
+        <div class="grid" style="grid-template-columns:1fr 1fr">
+          <div>
+            <p class="tag">Current</p>
+            <p>Looking for Full‑Stack Internship</p>
+          </div>
+          <div>
+            <p class="tag">Location</p>
+            <p>Lucknow, India</p>
+          </div>
+          <div>
+            <p class="tag">Education</p>
+            <p>B.Tech (CSE), 2022–2026</p>
+          </div>
+          <div>
+            <!-- <p class="tag">Elective</p>
+            <p>Renewable Energy (KOE‑074)</p> -->
+          </div>
+        </div>
+      </aside>
+    </div>
+  </section>  <!-- Skills -->  <section class="section" id="skills">
+    <div class="container">
+      <h2 class="title" style="font-size:1.6rem;margin-bottom:12px">Skills</h2>
+      <div class="grid skills">
+        <!-- Repeat for each skill -->
+        <div class="card" style="padding:14px">
+          <strong>HTML</strong>
+          <div class="bar" aria-label="HTML proficiency"><span style="width:92%"></span></div>
+        </div>
+        <div class="card" style="padding:14px">
+          <strong>CSS / Tailwind</strong>
+          <div class="bar"><span style="width:88%"></span></div>
+        </div>
+        <div class="card" style="padding:14px">
+          <strong>JavaScript (ES202x)</strong>
+          <div class="bar"><span style="width:90%"></span></div>
+        </div>
+        <div class="card" style="padding:14px">
+          <strong>React</strong>
+          <div class="bar"><span style="width:86%"></span></div>
+        </div>
+        <div class="card" style="padding:14px">
+          <strong>Node.js / Express</strong>
+          <div class="bar"><span style="width:84%"></span></div>
+        </div>
+        <div class="card" style="padding:14px">
+          <strong>MongoDB / Mongoose</strong>
+          <div class="bar"><span style="width:82%"></span></div>
+        </div>
+        <div class="card" style="padding:14px">
+          <strong>REST APIs</strong>
+          <div class="bar"><span style="width:85%"></span></div>
+        </div>
+        <div class="card" style="padding:14px">
+          <strong>Git & GitHub</strong>
+          <div class="bar"><span style="width:86%"></span></div>
+        </div>
+        <div class="card" style="padding:14px">
+          <strong>TypeScript</strong>
+          <div class="bar"><span style="width:70%"></span></div>
+        </div>
+      </div>
+    </div>
+  </section>  <!-- Projects -->  <section class="section" id="projects">
+    <div class="container">
+      <div style="display:flex;justify-content:space-between;align-items:end;gap:12px;flex-wrap:wrap">
+        <h2 class="title" style="font-size:1.6rem">Projects</h2>
+        <div style="display:flex;gap:8px;flex-wrap:wrap">
+          <button class="btn outline" data-filter="all">All</button>
+          <button class="btn outline" data-filter="frontend">Frontend</button>
+          <button class="btn outline" data-filter="fullstack">Full‑Stack</button>
+          <button class="btn outline" data-filter="data">Data/Charts</button>
+        </div>
+      </div>
+      <div class="grid projects" id="projectGrid" style="margin-top:14px">
+        <!-- Project Card -->
+        <article class="card project" data-tag="frontend">
+          <img src="https://images.unsplash.com/photo-1515879218367-8466d910aaa4?q=80&w=1200&auto=format&fit=crop" alt="SmartCalc preview">
+          <div class="pbody">
+            <div style="display:flex;justify-content:space-between;align-items:center;gap:10px">
+              <h3 style="margin:0">SmartCalc – Web Calculator</h3>
+              <span class="chip">frontend</span>
+            </div>
+            <p class="muted">A clean calculator with keyboard support, expression history, and dark mode.</p>
+            <div class="chip">HTML</div>
+            <div class="chip">CSS Grid</div>
+            <div class="chip">JavaScript</div>
+            <div style="margin-top:10px;display:flex;gap:8px;flex-wrap:wrap">
+              <a class="btn" href="#" target="_blank" rel="noreferrer">Live</a>
+              <a class="btn outline" href="#" target="_blank" rel="noreferrer">Code</a>
+            </div>
+          </div>
+        </article><article class="card project" data-tag="fullstack">
+      <img src="https://images.unsplash.com/photo-1555066931-4365d14bab8c?q=80&w=1200&auto=format&fit=crop" alt="TaskHive preview">
+      <div class="pbody">
+        <div style="display:flex;justify-content:space-between;align-items:center;gap:10px">
+          <h3 style="margin:0">TaskHive – MERN App</h3>
+          <span class="chip">full‑stack</span>
+        </div>
+        <p class="muted">Kanban‑style task manager with JWT auth and drag & drop.</p>
+        <div class="chip">React</div>
+        <div class="chip">Node</div>
+        <div class="chip">Express</div>
+        <div class="chip">MongoDB</div>
+        <div style="margin-top:10px;display:flex;gap:8px;flex-wrap:wrap">
+          <a class="btn" href="#" target="_blank" rel="noreferrer">Live</a>
+          <a class="btn outline" href="#" target="_blank" rel="noreferrer">Code</a>
+        </div>
+      </div>
+    </article>
+
+    <article class="card project" data-tag="data">
+      <img src="https://images.unsplash.com/photo-1509395176047-4a66953fd231?q=80&w=1200&auto=format&fit=crop" alt="GreenWatt preview">
+      <div class="pbody">
+        <div style="display:flex;justify-content:space-between;align-items:center;gap:10px">
+          <h3 style="margin:0">GreenWatt – Renewable Insights</h3>
+          <span class="chip">data</span>
+        </div>
+        <p class="muted">Interactive dashboards for solar & wind datasets, exportable reports.</p>
+        <div class="chip">Charts</div>
+        <div class="chip">API</div>
+        <div class="chip">Next.js</div>
+        <div style="margin-top:10px;display:flex;gap:8px;flex-wrap:wrap">
+          <a class="btn" href="#" target="_blank" rel="noreferrer">Live</a>
+          <a class="btn outline" href="#" target="_blank" rel="noreferrer">Code</a>
+        </div>
+      </div>
+    </article>
+
+  
+  </div>
+</div>
+
+  </section>  <!-- Experience & Education -->  <section class="section" id="experience">
+    <div class="container">
+      <h2 class="title" style="font-size:1.6rem;margin-bottom:12px">Experience & Education</h2>
+      <div class="timeline">
+        <article class="card" style="padding:16px">
+          <header style="display:flex;justify-content:space-between;align-items:baseline;gap:8px">
+            <h3 style="margin:0">Freelance · Full‑Stack Developer</h3>
+            <span class="tag">Jan 2024 – Present</span>
+          </header>
+          <ul>
+            <li>Delivered 10+ client projects with 95% on‑time rate.</li>
+            <li>Built reusable React components and Express APIs.</li>
+            <li>Set up CI/CD, linting, and testing for quality.</li>
+          </ul>
+        </article>
+        <article class="card" style="padding:16px">
+          <header style="display:flex;justify-content:space-between;align-items:baseline;gap:8px">
+            <h3 style="margin:0">B.Tech (CSE) · Your University</h3>
+            <span class="tag">2022 – 2026</span>
+          </header>
+          <ul>
+            <li>Open Elective: Renewable Energy Resources (KOE‑074).</li>
+            <li>Led tech club workshops on Git, JS, and React.</li>
+            <li>Organized hackathons with 200+ participants.</li>
+          </ul>
+        </article>
+      </div>
+    </div>
+  </section>  <!-- Contact -->  <section class="section" id="contact">
+    <div class="container grid" style="grid-template-columns:1fr 1fr;align-items:start">
+      <div class="card" style="padding:16px">
+        <h2 class="title" style="font-size:1.6rem;margin-bottom:12px">Contact</h2>
+        <p class="muted">Have a project in mind? Let's talk.</p>
+        <form class="form" onsubmit="return onSubmit(event)">
+          <div style="display:grid;grid-template-columns:1fr 1fr;gap:12px">
+            <input name="name" placeholder="Your name" required>
+            <input type="email" name="email" placeholder="Your email" required>
+          </div>
+          <input name="subject" placeholder="Subject">
+          <textarea name="message" placeholder="Write your message..." required></textarea>
+          <button class="btn" type="submit">Send Message</button>
+        </form>
+      </div>
+      <aside class="card" style="padding:16px">
+        <h3 style="margin:0 0 8px">Find me online</h3>
+        <div style="display:flex;gap:8px;flex-wrap:wrap">
+          <a class="btn outline" href="mailto:singhraghavendra821@gmail.com" target="_blank">Email</a>
+          <a class="btn outline" href="https://www.linkedin.com/in/raghavendra-singh-6999a62a4/" target="_blank" rel="noreferrer">LinkedIn</a>
+          <a class="btn outline" href="https://github.com/singhraghavendra821" target="_blank" rel="noreferrer">GitHub</a>
+        </div>
+      </aside>
+    </div>
+  </section>  <footer>
+    <div class="container" style="display:flex;justify-content:space-between;gap:12px;flex-wrap:wrap">
+      <p>© <span id="year"></span> Your Name. All rights reserved.</p>
+      <a class="chip" href="#home">↑ Back to top</a>
+    </div>
+  </footer>  <script>
+    // Set year
+    document.getElementById('year').textContent = new Date().getFullYear();
+
+    // Simple filter for projects
+    const grid = document.getElementById('projectGrid');
+    document.querySelectorAll('[data-filter]').forEach(btn => {
+      btn.addEventListener('click', () => {
+        const f = btn.getAttribute('data-filter');
+        document.querySelectorAll('#projectGrid .project').forEach(card => {
+          card.style.display = (f === 'all' || card.dataset.tag === f) ? '' : 'none';
+        });
+      })
+    })
+
+    // Contact handler
+    function onSubmit(e){
+      e.preventDefault();
+      const form = e.target;
+      const data = Object.fromEntries(new FormData(form));
+      alert(Thanks, ${data.name}! I will reach out at ${data.email}.);
+      form.reset();
+      return false;
+    }
+  </script>  <!-- Schema for rich results -->  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "Person",
+    "name": "Your Name",
+    "jobTitle": "Full-Stack Developer",
+    "email": "hello@example.com",
+    "url": "https://your-domain.com",
+    "sameAs": ["https://github.com/", "https://www.linkedin.com/"]
+  }
+  </script></body>
+</html>
